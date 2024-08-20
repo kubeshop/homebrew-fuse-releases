@@ -10,7 +10,7 @@ class Fuse < Formula
   on_macos do
     on_intel do
       url "https://github.com/kubeshop/fuse-releases/releases/download/v0.2.0/fuse-darwin-amd64"
-      sha256 "5dbb088b4a15c04a2aaf5eebd65cd0d1ee653f957d07ea3aa5ced1a457130b8e"
+      sha256 "efcdff73d4b01038bae888131bc592e793c0a97a7283893d8f45feed406e6723"
 
       def install
         bin.install "fuse-darwin-amd64" => "fuse"
@@ -18,7 +18,7 @@ class Fuse < Formula
     end
     on_arm do
       url "https://github.com/kubeshop/fuse-releases/releases/download/v0.2.0/fuse-darwin-arm64"
-      sha256 "70ec8f6fabc160f6d657ed901e3298f31ee727648b60f8487c241db74369ac7b"
+      sha256 "5b2ec4c67e29db6979debbe6f0f23d2bfbdcf75c970f795dfc2dbbfd02a78170"
 
       def install
         bin.install "fuse-darwin-arm64" => "fuse"
@@ -30,7 +30,7 @@ class Fuse < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/kubeshop/fuse-releases/releases/download/v0.2.0/fuse-linux-amd64"
-        sha256 "4663266bbe3879e2e72ddf46dc63945e9d8bd630c264b43fe6a561233853cf2b"
+        sha256 "66bc023169cde968245ed9895cc954d944e964462713a6a4461f16ec15e7366d"
 
         def install
           bin.install "fuse-linux-amd64" => "fuse"
@@ -40,7 +40,7 @@ class Fuse < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/kubeshop/fuse-releases/releases/download/v0.2.0/fuse-linux-arm64"
-        sha256 "698253133418d6bd3de53348fa8a85280005e0187252d54f81f90035c90ec6d2"
+        sha256 "342bdc2710c416c682454548cd5e4d621031372418e39c830293fb6678dc933c"
 
         def install
           bin.install "fuse-linux-arm64" => "fuse"
