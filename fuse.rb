@@ -5,20 +5,20 @@
 class Fuse < Formula
   desc "The ultimate AI assistant for Platform Engineers, crafted by the Botkube Team."
   homepage "https://botkube.io/fuse"
-  version "0.5.1"
+  version "0.6.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/kubeshop/fuse-releases/releases/download/v0.5.1/fuse-darwin-amd64"
-      sha256 "5df23d6a52bbf10bfe64b052b66f1e052864f8e4fa268e0a08d1c601fb8e9555"
+      url "https://github.com/kubeshop/fuse-releases/releases/download/v0.6.0/fuse-darwin-amd64"
+      sha256 "add6afab4ae0b14a43c32e6d4cc7b6fa038791d75ecbd2caf571f11f4d213442"
 
       def install
         bin.install "fuse-darwin-amd64" => "fuse"
       end
     end
     on_arm do
-      url "https://github.com/kubeshop/fuse-releases/releases/download/v0.5.1/fuse-darwin-arm64"
-      sha256 "b043ec2888df7845684570d16a58b9f422a1e4a38f24e6225fb6aa466283a3b8"
+      url "https://github.com/kubeshop/fuse-releases/releases/download/v0.6.0/fuse-darwin-arm64"
+      sha256 "147778f9879c6e70049326bdac2ca350c745c41a424f4dcb941d57f0292dc817"
 
       def install
         bin.install "fuse-darwin-arm64" => "fuse"
@@ -29,8 +29,8 @@ class Fuse < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kubeshop/fuse-releases/releases/download/v0.5.1/fuse-linux-amd64"
-        sha256 "b5b071e4892dc44811d94f6881a56e99b5a31e3f15540f4783c3a6844a282cd6"
+        url "https://github.com/kubeshop/fuse-releases/releases/download/v0.6.0/fuse-linux-amd64"
+        sha256 "022bc826b7a223816fd03080ba459d098d6517668833b20bfd53de3c5836355f"
 
         def install
           bin.install "fuse-linux-amd64" => "fuse"
@@ -39,8 +39,8 @@ class Fuse < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kubeshop/fuse-releases/releases/download/v0.5.1/fuse-linux-arm64"
-        sha256 "512b8315574f5336ddfbc614003cf3c4ca54d0a66993525c7bad3a69d32235d5"
+        url "https://github.com/kubeshop/fuse-releases/releases/download/v0.6.0/fuse-linux-arm64"
+        sha256 "d4d972200ea0ba6eba5a80907f49780f0344ed02ec4888ff90d5860def125595"
 
         def install
           bin.install "fuse-linux-arm64" => "fuse"
